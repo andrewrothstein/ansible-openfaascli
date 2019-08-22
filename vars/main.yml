@@ -1,0 +1,11 @@
+---
+# vars file for openfaascli
+openfaascli_exe_suffix: '{% if openfaascli_os == "linux" %}{% if openfaascli_arch == "amd64" %}{% else %}-{{ openfaascli_arch }}{% endif %}{% elif openfaascli_os == "windows" %}.exe{% else %}-{{ openfaascli_os }}{% endif %}'
+openfaascli_rexe: faas-cli{{ openfaascli_exe_suffix }}
+openfaascli_url: '{{ openfaascli_mirror }}/{{ openfaascli_ver }}/{{ openfaascli_rexe }}'
+openfaascli_platform: '{{ openfaascli_os }}-{{ openfaascli_arch }}'
+openfaascli_checksum: '{{ openfaascli_checksums[openfaascli_ver][openfaascli_platform] }}'
+
+openfaascli_lexe: faas-cli-{{ openfaascli_ver }}
+openfaascli_fq_lexe: '{{ openfaascli_install_dir }}/{{ openfaascli_lexe }}'
+openfaascli_link: '{{ openfaascli_install_dir }}/faas-cli'
