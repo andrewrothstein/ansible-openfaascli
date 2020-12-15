@@ -9,7 +9,7 @@
       skip: true
       paths:
         - '{{ role_path }}/vars'
-- name: download
+- name: downloading {{ openfaascli_url }} to {{ openfaascli_fq_lexe }}
   become: yes
   become_user: root
   get_url:
@@ -17,7 +17,7 @@
     dest: '{{ openfaascli_fq_lexe }}'
     checksum: '{{ openfaascli_checksum }}'
     mode: 0755
-- name: link
+- name: linking {{ openfaascli_link }} to {{ openfaascli_fq_lexe }}
   become: yes
   become_user: root
   file:
