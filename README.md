@@ -1,6 +1,6 @@
 andrewrothstein.openfaascli
 =========
-[![Build Status](https://travis-ci.org/andrewrothstein/ansible-openfaascli.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-openfaascli)
+![Build Status](https://github.com/andrewrothstein/ansible-openfaascli/actions/workflows/build.yml/badge.svg)
 
 Installs the [OpenFaas CLI](https://github.com/openfaas/faas-cli)
 
