@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+set -e
 DIR=~/Downloads
 MIRROR=https://github.com/openfaas/faas-cli/releases/download
 
@@ -25,4 +26,4 @@ dl_ver() {
     dl $ver windows amd64 faas-cli .exe
 }
 
-dl_ver ${1:-0.13.10}
+dl_ver ${1:-0.13.15}
