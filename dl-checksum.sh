@@ -26,4 +26,4 @@ dl_ver() {
     dl $ver windows amd64 faas-cli .exe
 }
 
-dl_ver ${1:-0.13.15}
+dl_ver ${1:-0.14.1}
