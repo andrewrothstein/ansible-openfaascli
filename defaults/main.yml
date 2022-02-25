@@ -1,6 +1,6 @@
 ---
 # defaults file for openfaascli
-openfaascli_ver: 0.14.1
+openfaascli_ver: 0.14.2
 openfaascli_os: linux
 openfaascli_arch: amd64
 openfaascli_mirror: https://github.com/openfaas/faas-cli/releases/download
@@ -222,3 +222,14 @@ openfaascli_checksums:
     darwin-darwin: sha256:8bbf60c8b7021d607f0c5f864b564791355e68236e60b57d5ae2646018d533d7
     # https://github.com/openfaas/faas-cli/releases/download/0.14.1/faas-cli.exe.sha256
     windows-amd64: sha256:5dc3558bbde175f917f95f8a75be81b83fcad415b384691f71244192ec326f9f
+  '0.14.2':
+    # https://github.com/openfaas/faas-cli/releases/download/0.14.2/faas-cli.sha256
+    linux-amd64: sha256:08f055522af43746a1404fd89cb5a6c845b44df10cede6db25b782c7bce88267
+    # https://github.com/openfaas/faas-cli/releases/download/0.14.2/faas-cli-arm64.sha256
+    linux-arm64: sha256:77473a736f79797d7da3e25896bf0beb31e09241f7e7fa65b921f4d901e19922
+    # https://github.com/openfaas/faas-cli/releases/download/0.14.2/faas-cli-armhf.sha256
+    linux-armhf: sha256:11946bd702866c7480b0a88ed4b4b06902902d65aa45c2b970e226c89d471036
+    # https://github.com/openfaas/faas-cli/releases/download/0.14.2/faas-cli-darwin.sha256
+    darwin-darwin: sha256:87503053d3c4f723b6820f155f5ce7baf71924aacffbbca4e8b2aaac37225ae8
+    # https://github.com/openfaas/faas-cli/releases/download/0.14.2/faas-cli.exe.sha256
+    windows-amd64: sha256:d30d5aa29a5a8ec5fabc2038c533e3ac83950e1d278faa3c9b870cfc228fd61e

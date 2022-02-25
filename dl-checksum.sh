@@ -13,7 +13,7 @@ dl()
     local platform="${os}-${arch}"
     local url=$MIRROR/$ver/$file$suffix.sha256
     printf "    # %s\n" $url
-    printf "    %s: sha256:%s\n" $platform $(curl -SsL $url | awk '{print $1}')
+    printf "    %s: sha256:%s\n" $platform $(curl -SsLf $url | awk '{print $1}')
 }
 
 dl_ver() {
@@ -26,4 +26,4 @@ dl_ver() {
     dl $ver windows amd64 faas-cli .exe
 }
 
-dl_ver ${1:-0.14.1}
+dl_ver ${1:-0.14.2}
