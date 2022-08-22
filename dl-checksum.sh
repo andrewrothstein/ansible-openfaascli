@@ -24,6 +24,7 @@ dl_ver() {
     dl $ver linux armhf faas-cli-armhf
     dl $ver darwin darwin faas-cli-darwin
     dl $ver windows amd64 faas-cli .exe
+    dl $ver windows arm64 faas-cli .exe
 }
 
-dl_ver ${1:-0.14.2}
+dl_ver ${1:-0.14.5}
