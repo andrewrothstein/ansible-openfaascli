@@ -27,4 +27,4 @@ dl_ver() {
     dl $ver windows arm64 faas-cli .exe
 }
 
-dl_ver ${1:-0.14.5}
+dl_ver ${1:-0.14.6}
