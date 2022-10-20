@@ -1,6 +1,6 @@
 ---
 # defaults file for openfaascli
-openfaascli_ver: 0.14.7
+openfaascli_ver: 0.14.11
 openfaascli_arch_map:
   aarch64: arm64
   x86_64: amd64
@@ -273,3 +273,47 @@ openfaascli_checksums:
     darwin-amd64: sha256:c95a75e30bfcd7c3663fa365dd663387923d465c5e848dbe7876e7087874175f
     # https://github.com/openfaas/faas-cli/releases/download/0.14.7/faas-cli.exe.sha256
     windows-amd64: sha256:04f78daafc405e92c779a8ce5973c0c7d1784ee77643e95895935ba2b47e1ab8
+  '0.14.8':
+    # https://github.com/openfaas/faas-cli/releases/download/0.14.8/faas-cli.sha256
+    linux-amd64: sha256:e70f4fc56d47676ffb9bef1bebd33efcfbda0ad0caf5940cb4ad136ca0299b4b
+    # https://github.com/openfaas/faas-cli/releases/download/0.14.8/faas-cli-arm64.sha256
+    linux-arm64: sha256:8331d257d7f79f07a76b6722fc7252aa4998887a474a316795029f69d768cee2
+    # https://github.com/openfaas/faas-cli/releases/download/0.14.8/faas-cli-armhf.sha256
+    linux-armhf: sha256:22d5aa625da1b861057fcc60a56d1dce2f4824b9e84ab0c003e8399ca4b37bb4
+    # https://github.com/openfaas/faas-cli/releases/download/0.14.8/faas-cli-darwin.sha256
+    darwin-amd64: sha256:b5549bcc966408ca117ff8e8de6213998b05f89d703355293b6e116d49143e60
+    # https://github.com/openfaas/faas-cli/releases/download/0.14.8/faas-cli.exe.sha256
+    windows-amd64: sha256:5c02183ae1a9344d79198f65be163cc0c21f6b8d996a410b20b8ed07284e3c14
+  '0.14.9':
+    # https://github.com/openfaas/faas-cli/releases/download/0.14.9/faas-cli.sha256
+    linux-amd64: sha256:de79ded33f969d34eb557cb38519e404158c19623cd2f2ea6f1c16e830612c67
+    # https://github.com/openfaas/faas-cli/releases/download/0.14.9/faas-cli-arm64.sha256
+    linux-arm64: sha256:b200e91d839be6a90c56da3994c59e0ca137150b5df82b85ff0ea789150a44de
+    # https://github.com/openfaas/faas-cli/releases/download/0.14.9/faas-cli-armhf.sha256
+    linux-armhf: sha256:00e90b66a168c5373c46b5c2bbdd07df136a54786a43d72fe181c75b3a61642c
+    # https://github.com/openfaas/faas-cli/releases/download/0.14.9/faas-cli-darwin.sha256
+    darwin-amd64: sha256:8859b11e25c7eeeac8fd1949f453e90fd0d027f1b57b4d4f74b1e7cfae9734f4
+    # https://github.com/openfaas/faas-cli/releases/download/0.14.9/faas-cli.exe.sha256
+    windows-amd64: sha256:588463179f4c1a7095c3e6106ea338769f4b7783bf13fbfd76adf92133678e03
+  '0.14.10':
+    # https://github.com/openfaas/faas-cli/releases/download/0.14.10/faas-cli.sha256
+    linux-amd64: sha256:ebbf9591714a74b74867d3c001ec32e96f470de384ab5d0b5942a1dd5794ea89
+    # https://github.com/openfaas/faas-cli/releases/download/0.14.10/faas-cli-arm64.sha256
+    linux-arm64: sha256:e388c0b2caba98e7384317655657cdbd239f71af4a8623f33854a647e35d168f
+    # https://github.com/openfaas/faas-cli/releases/download/0.14.10/faas-cli-armhf.sha256
+    linux-armhf: sha256:9c2918245524f7de03379198ce8e92ae85b876efbc1caf14e229f78e63a07307
+    # https://github.com/openfaas/faas-cli/releases/download/0.14.10/faas-cli-darwin.sha256
+    darwin-amd64: sha256:db0e2f8f5660428d3adcae6d12942d6462473035d6330b23b2e24d5fd9d44e12
+    # https://github.com/openfaas/faas-cli/releases/download/0.14.10/faas-cli.exe.sha256
+    windows-amd64: sha256:a542536b6ef7a40caea1947fe0a271de95552025c59a9b808b7259cd57981355
+  '0.14.11':
+    # https://github.com/openfaas/faas-cli/releases/download/0.14.11/faas-cli.sha256
+    linux-amd64: sha256:3c4fc3c40845f9cfe12a87ebf14ebe342ff7aad3520052d77858303ede8c2867
+    # https://github.com/openfaas/faas-cli/releases/download/0.14.11/faas-cli-arm64.sha256
+    linux-arm64: sha256:80d6db07c98dc8b3ba6edbc044c018a08213b79ac9d9d541d745edc4cc8bc218
+    # https://github.com/openfaas/faas-cli/releases/download/0.14.11/faas-cli-armhf.sha256
+    linux-armhf: sha256:2229c5055102fda9501439eca9ea5cf9e4026886ad093284067334a2bba62c58
+    # https://github.com/openfaas/faas-cli/releases/download/0.14.11/faas-cli-darwin.sha256
+    darwin-amd64: sha256:72c960ff7c3715c32111dc3aad641fba81b2d78d6d08e0531a4a25cbb0b1f937
+    # https://github.com/openfaas/faas-cli/releases/download/0.14.11/faas-cli.exe.sha256
+    windows-amd64: sha256:4015f5e065daca7fec36a8d4bf8006c76c68f003e12a1cd876bef91959d3b26d
