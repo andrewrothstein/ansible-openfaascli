@@ -1,6 +1,6 @@
 ---
-- name: resolve platform specific vars
-  include_vars: '{{ item }}'
+- name: Resolve platform specific vars
+  ansible.builtin.include_vars: '{{ item }}'
   with_first_found:
     - files:
         - '{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
@@ -9,18 +9,18 @@
       skip: true
       paths:
         - '{{ role_path }}/vars'
-- name: downloading {{ openfaascli_url }} to {{ openfaascli_fq_lexe }}
+- name: Downloading {{ openfaascli_url }} to {{ openfaascli_fq_lexe }}
   become: true
   become_user: root
-  get_url:
+  ansible.builtin.get_url:
     url: '{{ openfaascli_url }}'
     dest: '{{ openfaascli_fq_lexe }}'
     checksum: '{{ openfaascli_checksum }}'
-    mode: 0755
-- name: linking {{ openfaascli_link }} to {{ openfaascli_fq_lexe }}
+    mode: '755'
+- name: Linking {{ openfaascli_link }} to {{ openfaascli_fq_lexe }}
   become: true
   become_user: root
-  file:
+  ansible.builtin.file:
     src: '{{ openfaascli_fq_lexe }}'
     dest: '{{ openfaascli_link }}'
     state: link
